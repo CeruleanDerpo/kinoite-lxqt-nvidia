@@ -20,20 +20,21 @@ modules:
   - type: dnf
     group-install:
       packages:
-        lxqt-desktop-environment
+        - lxqt-desktop-environment
     install:
       skip-unavailable: true
 
       packages:
-        qt6ct
-        kvantum
-        distrobox
+        - qt6ct
+        - kvantum
+        - distrobox
       
     remove:
+      packages:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
-      - firefox
-      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - firefox
+        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     configurations:
