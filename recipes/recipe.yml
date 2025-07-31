@@ -19,6 +19,8 @@ modules:
 
   - type: dnf
     group-install:
+      skip-broken: true
+
       packages:
         - lxqt-desktop-environment
     install:
