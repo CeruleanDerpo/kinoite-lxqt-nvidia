@@ -27,6 +27,7 @@ modules:
       packages:
         qt6ct
         kvantum
+        distrobox
       
     remove:
       # example: removing firefox (in favor of the flatpak)
